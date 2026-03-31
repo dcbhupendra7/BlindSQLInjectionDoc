@@ -1,0 +1,56 @@
+site_name: StatSQLi Documentation
+site_description: Detailed documentation for the StatSQLi research project and tooling
+site_author: StatSQLi Team
+repo_url: https://github.com/dcbhupendra7/BlindSQLInjection
+repo_name: dcbhupendra7/BlindSQLInjection
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - search.share
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Project Report:
+      - Report Summary: report-summary.md
+      - Methods and Results: methods-and-results.md
+      - Figures: figures.md
+  - User Guide:
+      - CLI Guide: user-guide/cli-guide.md
+      - Python API Guide: user-guide/python-api.md
+      - Lab Setup: user-guide/lab-setup.md
+  - Technical Deep Dive:
+      - Architecture: technical/architecture.md
+      - Statistical Model: technical/statistical-model.md
+      - Extraction Algorithms: technical/extraction-algorithms.md
+      - Module Walkthrough: technical/module-walkthrough.md
+  - Benchmarking:
+      - Running Benchmarks: benchmarking/running-benchmarks.md
+      - Chart Generation: benchmarking/chart-generation.md
+  - Safety and Operations:
+      - Ethical Use: safety/ethical-use.md
+      - Troubleshooting: safety/troubleshooting.md
+      - Deployment: safety/deployment.md
